@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+#navbar {
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 15rem;
+  height: 32rem;
+  background-image: url('../assets/images/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.step-box #number {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  background-color: transparent;
+  color: #000;
+  padding: 5px 10px;
+  background-color: rgb(140, 216, 216);
+}
+
+.step-box {
+  position: relative;
+  top: 3rem;
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
+
+.step-box h6 {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  left: 10px;
+  text-align: left;
+  line-height: 18px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.step-span {
+  color: hsl(229, 24%, 87%);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 470px) {
+  #main-page {
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /**/
+    align-items: center;
+  }
+  #navbar {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    width: 95%;
+    height: 7rem;
+    background-image: url('../assets/images/bg-sidebar-mobile.svg');
+    flex-direction: row;
+    justify-content: center;
+  }
+  .step-box h6 {
+    display: none;
+  }
+  .step-box .numbers {
+    position: relative;
+    padding: 5px 10px;
+    top: 35px;
+    right: 15px;
+  }
+}
